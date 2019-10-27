@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>ENTER YOUR ROLE</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            background: #FFFFFF;
+
+            background-image: url("id2.gif");
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .center {
+            background-color: #68a7f4;
+            width: 15%;
+
+            padding: 89px;
+            border: 5px solid black;
+
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center" width="600px">
+        <h3>Add Products</h3>
+        <table align=" center">
+            <tr> <input type="text" placeholder="Product Name" id="text1" name="product_name" />
+            </tr>
+            <tr>
+                <input type="text" placeholder="Product id" id="text2" name="product_id" />
+            </tr>
+            <tr>
+                <input type="text" placeholder="Product Price" id="text3" name="product_price" />
+            </tr>
+            <tr>
+                <input type="text" placeholder="Product Seller" id="text4" name="product_seller" />
+            </tr>
+            <tr>
+                <input type="text" placeholder="Quantity" id="text5" name="quantity" />
+            </tr>
+            <tr>
+               <input type="button" id="btn" value="Submit" onClick="javascript: window.open('https://dcodersiot.000webhostapp.com/app/chatbot/insert_listofprodcuts.php?' +('product_name=')+ document.getElementById('text1').value+('&product_id=')+document.getElementById('text2').value+ ('&product_price=')+document.getElementById('text3').value+('&product_seller=')+document.getElementById('text4').value+('&quantity=')+document.getElementById('text4').value );" />
+            </tr>
+        </table>
+
+
+
+
+
+    </div>
+</body>
+
+</html>
